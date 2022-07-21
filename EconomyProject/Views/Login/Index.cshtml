@@ -1,0 +1,82 @@
+﻿@{
+    Layout = null;
+}
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/site.css" />
+<link rel="stylesheet" href="~/css/signUp.css" />
+<section class=" text-center text-lg-start">
+    <style>
+        .rounded-t-5 {
+            border-top-left-radius: 0.5rem;
+            border-top-right-radius: 0.5rem;
+        }
+
+        .rounded-tr-lg-0 {
+            border-top-right-radius: 0;
+        }
+
+        .rounded-bl-lg-5 {
+            border-bottom-left-radius: 0.5rem;
+        }
+
+        
+    </style>
+        <div class="card mb-3">
+            <div class="row g-0 d-flex align-items-center">
+                <div class="col-lg-4 d-none d-lg-flex">
+                    <img src="~/images/economyLogin.jpg" alt="Trendy Pants and Shoes"  style="padding-bottom:50px"
+                          />
+                </div>
+                <div class="col-lg-8">
+                    <div class="card-body py-5 px-md-5" style="margin-bottom:40px!important">
+                        <h2>GİRİŞ YAP</h2>
+                        <form method="post" asp-controller="Login" asp-action="Index">
+                          
+                            <div class="form-outline mb-4">
+                                <input type="text" id="username" class="form-control" name="username" required/>
+                                <label class="form-label" for="username">Kullanıcı Adı</label>
+                            </div>
+
+                           
+                            <div class="form-outline mb-4">
+                                <input type="password" id="password" class="form-control" name="password" required/>
+                                <label class="form-label" for="password">Parola</label>
+                            </div>
+
+                            
+                            <div class="row mb-4">
+                                <div class="col d-flex justify-content-center">
+                                    
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
+                                        <label class="form-check-label" for="form2Example31"> Beni Hatırla </label>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    
+                                    <a href="https://localhost:44345/SignUp/Index">Hesabın mı yok ? Kayıt olabilirsin.. </a>
+                                </div>
+                            </div>
+
+                            <span class="badge badge-danger">@(ViewBag.errorLogin ?? String.Empty)</span>
+                            <br />
+                            <br />
+                            
+                            <button type="submit" class="btn btn-primary btn-block mb-4">Giriş Yap</button>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+

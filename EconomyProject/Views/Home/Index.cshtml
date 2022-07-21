@@ -1,0 +1,85 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+</head>
+
+
+<div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"></div>
+    <a href="https://tr.tradingview.com" _fcksavedurl="https://tr.tradingview.com" rel="noopener" target="_blank"></a>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+          {   "symbols": [
+            {
+              "proName": "OANDA:SPX500USD",
+              "title": "SP 500"
+            },
+            {
+              "proName": "FX_IDC:EURUSD",
+              "title": "EUR/USD"
+            },
+            {
+              "proName": "BITSTAMP:BTCUSD",
+              "title": "BTC/USD"
+            },
+            {
+              "proName": "BITSTAMP:ETHUSD",
+              "title": "ETH/USD"
+            }
+          ],
+          "colorTheme": "light",
+          "isTransparent": false,
+          "displayMode": "adaptive",
+          "locale": "tr"
+        }
+    </script>
+</div>
+<body class="w3-light-grey">
+    <form method="post" asp-controller="Home" asp-action="Index">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <div class="card text-center" style="border-radius:20px">
+                    <div class="card-header mt-3">
+                        <h1>Paranızı en güncel kurdan çevirin</h1>
+                    </div>
+                    <div class="card-subtitle p-0 mx-2">
+                    </div>
+                    <div class="card-body-mt-2">
+                        <div class="form-group form-inline d-flex justify-content-center" style="margin-top:40px">
+                            <div class="input-group mr-2 mb-1">
+                                <label style="margin-left:40px; margin-right:20px;">Dönüştüreceğiniz birim(from) :  </label>
+                                <input type="text" required name="fromCurrencyUnit" class="form-control" placeholder="TL/USD/EURO" style="border-radius:10px" />
+                            </div>
+                            <div class="input-group mr-2 mb-1">
+                                <label style="margin-left:40px; margin-right:20px;">Dönüştürülecek birim(To) : </label>
+                                <input type="text" required name="toCurrencyUnit" class="form-control" placeholder="TL/USD/EURO" style="border-radius:10px" />
+                            </div>
+                        </div>
+                        <div class="form-group form-inline d-flex justify-content-center" style="margin-top:40px">
+                            <div class="input-group mr-2 mb-1">
+                                <label style="margin-left:10px; margin-right:20px;">Dönüştüreceğiniz miktar :</label>
+                                <input type="number" name="quantityCurrency" class="form-control" placeholder="00.87" style="border-radius:10px" required />
+                            </div>
+                            <div class="input-group mr-2 mb-1">
+                                <label style="margin-left:40px; margin-right:20px; visibility:hidden">Dönüşen miktar :</label>
+                                <input type="text" class="form-control" placeholder="00.87" style="border-radius:10px; visibility:hidden"/>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg" style="margin-top:20px;margin-bottom:40px">DÖNÜŞTÜR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="text-align:center;display:flex;align-items:center;margin-top:60px;font-weight:600">
+            <input type="text" class="form-control" readonly placeholder="Dönüştürme sonucunuz burada görünecektir..." style="border-radius:10px" value="@(ViewBag.calculatedData ?? String.Empty)" />
+        </div>
+    </div>
+    </form>
+</body>
