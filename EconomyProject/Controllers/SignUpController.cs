@@ -1,5 +1,5 @@
-﻿using BusinessLayer.Concrete;
-using EntityLayer.Concrete;
+﻿using EconomyProject.Business.Concrete;
+using EconomyProject.Entity.Concrete;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EconomyProject.Controllers
@@ -17,7 +17,7 @@ namespace EconomyProject.Controllers
             if (user.Password == verifyPassword)
             {
                 userManager.UserAdd(user);
-                return View();
+                return RedirectToAction("Index", "Login");
             }
             else
             {

@@ -1,15 +1,12 @@
-﻿using DataAccessLayer.Abstract;
-using DataAccessLayer.Concrete;
-using EntityLayer.Concrete;
+﻿using EconomyProject.Data.Abstract;
+using EconomyProject.Data.Concrete;
+using EconomyProject.Entity.Concrete;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace DataAccessLayer.Repositories
+namespace EconomyProject.Data.Repositories
 {
-    public class UserRepository : IUserDal
+    public class UserRepository : IUser
     {
         Context c = new Context();
         public void AddUser(User user)
@@ -25,14 +22,14 @@ namespace DataAccessLayer.Repositories
 
         public User GetById(int id)
         {
-            User userTmp = c.Users.FirstOrDefault(x=>x.UserId == id);
+            User userTmp = c.Users.FirstOrDefault(x => x.UserId == id);
             return userTmp;
         }
 
         public bool LoginUserByUsernameAndPassword(string username, string password)
         {
-           User userLogin= c.Users.FirstOrDefault(x => x.Username == username && x.Password == password);
-            if(userLogin != null)
+            User userLogin = c.Users.FirstOrDefault(x => x.Username == username && x.Password == password);
+            if (userLogin != null)
             {
                 return true;
             }

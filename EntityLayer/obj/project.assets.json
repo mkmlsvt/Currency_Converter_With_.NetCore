@@ -3988,9 +3988,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\EntityLayer\\EntityLayer.csproj",
-      "projectName": "EntityLayer",
-      "projectPath": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\EntityLayer\\EntityLayer.csproj",
+      "projectUniqueName": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\EntityLayer\\EconomyProject.Entity.csproj",
+      "projectName": "EconomyProject.Entity",
+      "projectPath": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\EntityLayer\\EconomyProject.Entity.csproj",
       "packagesPath": "C:\\Users\\kmlsv\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\EntityLayer\\obj\\",
       "projectStyle": "PackageReference",

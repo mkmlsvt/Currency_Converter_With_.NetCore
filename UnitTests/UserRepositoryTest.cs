@@ -1,29 +1,28 @@
-﻿using DataAccessLayer.Concrete;
-using DataAccessLayer.Repositories;
-using EntityLayer.Concrete;
+﻿using EconomyProject.Data.Concrete;
+using EconomyProject.Data.Repositories;
+using EconomyProject.Entity.Concrete;
 using NUnit.Framework;
-using System;
 using System.Linq;
 
-namespace UnitTests
+namespace EconomyProject.Tests
 {
     public class UserRepositoryTest
     {
-        UserRepository userRepository ;
+        UserRepository _sut; // system under test
         [SetUp]
         public void Setup()
         {
-            userRepository = new UserRepository();
+            _sut = new UserRepository();
         }
-        [Test] 
-        public void AddDatabase_Works()
+        [Test]
+        public void AddUser_TrueStory()
         {
             User user = new User();
             user.Username = "alex";
             user.Password = "DeSouza";
-            userRepository.AddUser(user);
+            _sut.AddUser(user);
             Context c = new Context();
-            User userControl = c.Users.FirstOrDefault(x=>x.Username==user.Username&&x.Password==user.Password);
+            User userControl = c.Users.FirstOrDefault(x => x.Username == user.Username && x.Password == user.Password);
             Assert.IsNotNull(userControl);
         }
     }

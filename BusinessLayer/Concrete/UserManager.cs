@@ -1,20 +1,16 @@
-﻿using BusinessLayer.Abstract;
-using DataAccessLayer.Repositories;
-using EntityLayer.Concrete;
+﻿using EconomyProject.Business.Abstract;
+using EconomyProject.Data.Repositories;
+using EconomyProject.Entity.Concrete;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace BusinessLayer.Concrete
+namespace EconomyProject.Business.Concrete
 {
     public class UserManager : IUserService
     {
         UserRepository userRepository;
         public UserManager()
         {
-            userRepository = new UserRepository(); 
+            userRepository = new UserRepository();
         }
         public void GetUserById(int id)
         {
@@ -23,7 +19,7 @@ namespace BusinessLayer.Concrete
 
         public bool LoginUserByUsernameAndPassword(string username, string password)
         {
-            return userRepository.LoginUserByUsernameAndPassword(username,password);
+            return userRepository.LoginUserByUsernameAndPassword(username, password);
         }
 
         public void UserAdd(User user)

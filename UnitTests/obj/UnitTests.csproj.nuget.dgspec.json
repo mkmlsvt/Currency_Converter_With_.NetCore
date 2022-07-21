@@ -4,12 +4,12 @@
     "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\UnitTests\\UnitTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\BusinessLayer\\BusinessLayer.csproj": {
+    "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\BusinessLayer\\EconomyProject.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\BusinessLayer\\BusinessLayer.csproj",
-        "projectName": "BusinessLayer",
-        "projectPath": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\BusinessLayer\\BusinessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\BusinessLayer\\EconomyProject.Business.csproj",
+        "projectName": "EconomyProject.Business",
+        "projectPath": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\BusinessLayer\\EconomyProject.Business.csproj",
         "packagesPath": "C:\\Users\\kmlsv\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\BusinessLayer\\obj\\",
         "projectStyle": "PackageReference",
@@ -28,11 +28,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\DataAccessLayer\\DataAccessLayer.csproj": {
-                "projectPath": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\DataAccessLayer\\DataAccessLayer.csproj"
+              "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\DataAccessLayer\\EconomyProject.Data.csproj": {
+                "projectPath": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\DataAccessLayer\\EconomyProject.Data.csproj"
               },
-              "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\EntityLayer\\EntityLayer.csproj": {
-                "projectPath": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\EntityLayer\\EntityLayer.csproj"
+              "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\EntityLayer\\EconomyProject.Entity.csproj": {
+                "projectPath": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\EntityLayer\\EconomyProject.Entity.csproj"
               }
             }
           }
@@ -95,12 +95,12 @@
         }
       }
     },
-    "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\DataAccessLayer\\DataAccessLayer.csproj": {
+    "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\DataAccessLayer\\EconomyProject.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\DataAccessLayer\\DataAccessLayer.csproj",
-        "projectName": "DataAccessLayer",
-        "projectPath": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\DataAccessLayer\\EconomyProject.Data.csproj",
+        "projectName": "EconomyProject.Data",
+        "projectPath": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\DataAccessLayer\\EconomyProject.Data.csproj",
         "packagesPath": "C:\\Users\\kmlsv\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
@@ -119,8 +119,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\EntityLayer\\EntityLayer.csproj": {
-                "projectPath": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\EntityLayer\\EntityLayer.csproj"
+              "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\EntityLayer\\EconomyProject.Entity.csproj": {
+                "projectPath": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\EntityLayer\\EconomyProject.Entity.csproj"
               }
             }
           }
@@ -199,12 +199,12 @@
         }
       }
     },
-    "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\EconomyProject\\EconomyProject.csproj": {
+    "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\EconomyProject\\EconomyProject.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\EconomyProject\\EconomyProject.csproj",
-        "projectName": "EconomyProject",
-        "projectPath": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\EconomyProject\\EconomyProject.csproj",
+        "projectUniqueName": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\EconomyProject\\EconomyProject.Web.csproj",
+        "projectName": "EconomyProject.Web",
+        "projectPath": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\EconomyProject\\EconomyProject.Web.csproj",
         "packagesPath": "C:\\Users\\kmlsv\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\EconomyProject\\obj\\",
         "projectStyle": "PackageReference",
@@ -223,14 +223,14 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\BusinessLayer\\BusinessLayer.csproj": {
-                "projectPath": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\BusinessLayer\\BusinessLayer.csproj"
+              "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\BusinessLayer\\EconomyProject.Business.csproj": {
+                "projectPath": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\BusinessLayer\\EconomyProject.Business.csproj"
               },
-              "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\DataAccessLayer\\DataAccessLayer.csproj": {
-                "projectPath": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\DataAccessLayer\\DataAccessLayer.csproj"
+              "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\DataAccessLayer\\EconomyProject.Data.csproj": {
+                "projectPath": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\DataAccessLayer\\EconomyProject.Data.csproj"
               },
-              "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\EntityLayer\\EntityLayer.csproj": {
-                "projectPath": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\EntityLayer\\EntityLayer.csproj"
+              "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\EntityLayer\\EconomyProject.Entity.csproj": {
+                "projectPath": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\EntityLayer\\EconomyProject.Entity.csproj"
               }
             }
           }
@@ -320,12 +320,12 @@
         }
       }
     },
-    "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\EntityLayer\\EntityLayer.csproj": {
+    "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\EntityLayer\\EconomyProject.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\EntityLayer\\EntityLayer.csproj",
-        "projectName": "EntityLayer",
-        "projectPath": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\EntityLayer\\EntityLayer.csproj",
+        "projectUniqueName": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\EntityLayer\\EconomyProject.Entity.csproj",
+        "projectName": "EconomyProject.Entity",
+        "projectPath": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\EntityLayer\\EconomyProject.Entity.csproj",
         "packagesPath": "C:\\Users\\kmlsv\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\EntityLayer\\obj\\",
         "projectStyle": "PackageReference",
@@ -424,17 +424,17 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\BusinessLayer\\BusinessLayer.csproj": {
-                "projectPath": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\BusinessLayer\\BusinessLayer.csproj"
+              "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\BusinessLayer\\EconomyProject.Business.csproj": {
+                "projectPath": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\BusinessLayer\\EconomyProject.Business.csproj"
               },
-              "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\DataAccessLayer\\DataAccessLayer.csproj": {
-                "projectPath": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\DataAccessLayer\\DataAccessLayer.csproj"
+              "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\DataAccessLayer\\EconomyProject.Data.csproj": {
+                "projectPath": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\DataAccessLayer\\EconomyProject.Data.csproj"
               },
-              "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\EconomyProject\\EconomyProject.csproj": {
-                "projectPath": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\EconomyProject\\EconomyProject.csproj"
+              "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\EconomyProject\\EconomyProject.Web.csproj": {
+                "projectPath": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\EconomyProject\\EconomyProject.Web.csproj"
               },
-              "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\EntityLayer\\EntityLayer.csproj": {
-                "projectPath": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\EntityLayer\\EntityLayer.csproj"
+              "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\EntityLayer\\EconomyProject.Entity.csproj": {
+                "projectPath": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\EntityLayer\\EconomyProject.Entity.csproj"
               }
             }
           }

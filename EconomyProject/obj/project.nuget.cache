@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xpDe03VEtvuXc7BWxb0Dyv1lPhAJQLcU9fgsE05XiV+y27XFZqJWGQj7ZJ3i+FU/ChJ/kq1brQt5ykTJt3CpFg==",
+  "dgSpecHash": "82Mlc9RzcboxtRCTsyV/XAVjbCmZ3Mj5OmpOz4Q9vjDI7A0HUb0ZyoMF3U47uFOi+RNW+YYZqbEJXbOpQni0IA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\EconomyProject\\EconomyProject.csproj",
+  "projectFilePath": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\EconomyProject\\EconomyProject.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kmlsv\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\kmlsv\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

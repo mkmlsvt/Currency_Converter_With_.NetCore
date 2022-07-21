@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LWdC4KdjCKJ0z+a5K+tAoD5Lb/mRQtFE2qkdQL4jzL19vr/iJFZYLrcTvgj4uSMqVp3sNMN0zHg0G5m2V0IJ8Q==",
+  "dgSpecHash": "6TIIrEUqO3zUaxORKKspbAFgK0/xIrPJYTeNu4hnzzZutFxexwefXi1qoHzCSYW0FX2IikOiUIN9OK47T4NPlA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\BusinessLayer\\BusinessLayer.csproj",
+  "projectFilePath": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\BusinessLayer\\EconomyProject.Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kmlsv\\.nuget\\packages\\microsoft.codecoverage\\17.2.0\\microsoft.codecoverage.17.2.0.nupkg.sha512",
     "C:\\Users\\kmlsv\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

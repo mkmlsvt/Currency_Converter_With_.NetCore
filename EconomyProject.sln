@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EconomyProject", "EconomyProject\EconomyProject.csproj", "{12D4A2A2-84AE-4FF2-A211-86D092BE7399}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EconomyProject.Web", "EconomyProject\EconomyProject.Web.csproj", "{12D4A2A2-84AE-4FF2-A211-86D092BE7399}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityLayer", "EntityLayer\EntityLayer.csproj", "{3193AA61-231F-48AF-BEB3-3D49D20CB015}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EconomyProject.Entity", "EntityLayer\EconomyProject.Entity.csproj", "{3193AA61-231F-48AF-BEB3-3D49D20CB015}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{F83E5C05-0657-4CBF-ABD2-05EC62B07312}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EconomyProject.Data", "DataAccessLayer\EconomyProject.Data.csproj", "{F83E5C05-0657-4CBF-ABD2-05EC62B07312}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{CAE0FF9F-F917-494D-BC17-94154066B32E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EconomyProject.Business", "BusinessLayer\EconomyProject.Business.csproj", "{CAE0FF9F-F917-494D-BC17-94154066B32E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{15AC5FD8-16AD-4D36-B28F-61AEC62FFA75}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EconomyProject.Tests", "UnitTests\EconomyProject.Tests.csproj", "{15AC5FD8-16AD-4D36-B28F-61AEC62FFA75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EconomyProject.API", "EconomyProject.API\EconomyProject.API.csproj", "{89BE3C73-DC2C-4E71-B74C-C7E1425AEF9F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{15AC5FD8-16AD-4D36-B28F-61AEC62FFA75}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15AC5FD8-16AD-4D36-B28F-61AEC62FFA75}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15AC5FD8-16AD-4D36-B28F-61AEC62FFA75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89BE3C73-DC2C-4E71-B74C-C7E1425AEF9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89BE3C73-DC2C-4E71-B74C-C7E1425AEF9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89BE3C73-DC2C-4E71-B74C-C7E1425AEF9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89BE3C73-DC2C-4E71-B74C-C7E1425AEF9F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

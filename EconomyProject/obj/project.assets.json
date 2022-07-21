@@ -2385,12 +2385,27 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "BusinessLayer/1.0.0": {
+      "EconomyProject.API/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "DataAccessLayer": "1.0.0",
-          "EntityLayer": "1.0.0",
+          "EconomyProject.Business": "1.0.0",
+          "EconomyProject.Entity": "1.0.0",
+          "RestSharp": "108.0.1"
+        },
+        "compile": {
+          "bin/placeholder/EconomyProject.API.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EconomyProject.API.dll": {}
+        }
+      },
+      "EconomyProject.Business/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "EconomyProject.Data": "1.0.0",
+          "EconomyProject.Entity": "1.0.0",
           "Microsoft.NET.Test.Sdk": "17.2.0",
           "NUnit": "3.13.3",
           "NUnit.Console": "3.15.2",
@@ -2400,17 +2415,17 @@
           "RestSharp": "108.0.1"
         },
         "compile": {
-          "bin/placeholder/BusinessLayer.dll": {}
+          "bin/placeholder/EconomyProject.Business.dll": {}
         },
         "runtime": {
-          "bin/placeholder/BusinessLayer.dll": {}
+          "bin/placeholder/EconomyProject.Business.dll": {}
         }
       },
-      "DataAccessLayer/1.0.0": {
+      "EconomyProject.Data/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "EntityLayer": "1.0.0",
+          "EconomyProject.Entity": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.17",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17",
           "Microsoft.NET.Test.Sdk": "17.2.0",
@@ -2421,13 +2436,13 @@
           "NUnit3TestAdapter": "4.2.1"
         },
         "compile": {
-          "bin/placeholder/DataAccessLayer.dll": {}
+          "bin/placeholder/EconomyProject.Data.dll": {}
         },
         "runtime": {
-          "bin/placeholder/DataAccessLayer.dll": {}
+          "bin/placeholder/EconomyProject.Data.dll": {}
         }
       },
-      "EntityLayer/1.0.0": {
+      "EconomyProject.Entity/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
@@ -2439,10 +2454,10 @@
           "NUnit3TestAdapter": "4.2.1"
         },
         "compile": {
-          "bin/placeholder/EntityLayer.dll": {}
+          "bin/placeholder/EconomyProject.Entity.dll": {}
         },
         "runtime": {
-          "bin/placeholder/EntityLayer.dll": {}
+          "bin/placeholder/EconomyProject.Entity.dll": {}
         }
       }
     }
@@ -8529,27 +8544,31 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
-    "BusinessLayer/1.0.0": {
+    "EconomyProject.API/1.0.0": {
       "type": "project",
-      "path": "../BusinessLayer/BusinessLayer.csproj",
-      "msbuildProject": "../BusinessLayer/BusinessLayer.csproj"
+      "path": "../EconomyProject.API/EconomyProject.API.csproj",
+      "msbuildProject": "../EconomyProject.API/EconomyProject.API.csproj"
     },
-    "DataAccessLayer/1.0.0": {
+    "EconomyProject.Business/1.0.0": {
       "type": "project",
-      "path": "../DataAccessLayer/DataAccessLayer.csproj",
-      "msbuildProject": "../DataAccessLayer/DataAccessLayer.csproj"
+      "path": "../BusinessLayer/EconomyProject.Business.csproj",
+      "msbuildProject": "../BusinessLayer/EconomyProject.Business.csproj"
     },
-    "EntityLayer/1.0.0": {
+    "EconomyProject.Data/1.0.0": {
       "type": "project",
-      "path": "../EntityLayer/EntityLayer.csproj",
-      "msbuildProject": "../EntityLayer/EntityLayer.csproj"
+      "path": "../DataAccessLayer/EconomyProject.Data.csproj",
+      "msbuildProject": "../DataAccessLayer/EconomyProject.Data.csproj"
+    },
+    "EconomyProject.Entity/1.0.0": {
+      "type": "project",
+      "path": "../EntityLayer/EconomyProject.Entity.csproj",
+      "msbuildProject": "../EntityLayer/EconomyProject.Entity.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "BusinessLayer >= 1.0.0",
-      "DataAccessLayer >= 1.0.0",
-      "EntityLayer >= 1.0.0",
+      "EconomyProject.API >= 1.0.0",
+      "EconomyProject.Entity >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 5.0.17",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.17",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.17",
@@ -8570,9 +8589,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\EconomyProject\\EconomyProject.csproj",
-      "projectName": "EconomyProject",
-      "projectPath": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\EconomyProject\\EconomyProject.csproj",
+      "projectUniqueName": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\EconomyProject\\EconomyProject.Web.csproj",
+      "projectName": "EconomyProject.Web",
+      "projectPath": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\EconomyProject\\EconomyProject.Web.csproj",
       "packagesPath": "C:\\Users\\kmlsv\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\EconomyProject\\obj\\",
       "projectStyle": "PackageReference",
@@ -8591,14 +8610,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\BusinessLayer\\BusinessLayer.csproj": {
-              "projectPath": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\BusinessLayer\\BusinessLayer.csproj"
+            "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\EconomyProject.API\\EconomyProject.API.csproj": {
+              "projectPath": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\EconomyProject.API\\EconomyProject.API.csproj"
             },
-            "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\DataAccessLayer\\DataAccessLayer.csproj": {
-              "projectPath": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\DataAccessLayer\\DataAccessLayer.csproj"
-            },
-            "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\EntityLayer\\EntityLayer.csproj": {
-              "projectPath": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\EntityLayer\\EntityLayer.csproj"
+            "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\EntityLayer\\EconomyProject.Entity.csproj": {
+              "projectPath": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\EntityLayer\\EconomyProject.Entity.csproj"
             }
           }
         }

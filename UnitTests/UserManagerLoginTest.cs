@@ -1,27 +1,22 @@
-﻿using BusinessLayer.Concrete;
+﻿using EconomyProject.Business.Concrete;
 using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace UnitTests
+namespace EconomyProject.Tests
 {
     public class UserManagerLoginTest
     {
-        UserManager userManager;
+        UserManager _sut;
         [SetUp]
         public void Setup()
         {
-            userManager = new UserManager();
+            _sut = new UserManager();
         }
         [Test]
-        public void TestLogin()
+        public void LoginUserByUsernameAndPassword_TrueStroy()
         {
             var username = "alex";
             var password = "DeSouza";
-            bool isLogin  = userManager.LoginUserByUsernameAndPassword(username, password);
+            bool isLogin = _sut.LoginUserByUsernameAndPassword(username, password);
             Assert.IsTrue(isLogin);
         }
     }

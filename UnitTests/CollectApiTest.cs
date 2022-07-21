@@ -1,29 +1,26 @@
-﻿using BusinessLayer.ReqAPI;
+﻿
+using EconomyProject.API.Controllers;
 using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace UnitTests
+
+namespace EconomyProject.Tests
 {
     public class CollectApiTest
     {
         string _base,_to; int quantity;
-        CollectApi collectApi;
+        CollectController _sut;
         [SetUp]
         public void Setup()
         {
              _base = "rohanGumusu";
              _to = "starKurdu";
              quantity = 5;
-             collectApi = new CollectApi(_base,_to,quantity);
+             _sut = new CollectController(_base,_to,quantity);
         }
         [Test]
-        public void ApiResShouldBeZero()
+        public void GetRequestApi_WhenParamsİsNotSuitable_ShouldReturnZero()
         {
-            double result =  collectApi.getRequestApi();
+            double result =  _sut.getRequestApi();
             Assert.AreEqual(0, result);
         }
 

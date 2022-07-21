@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eimsFNIOZCP+HnS2JhOiw6vBpvgGfbP22L+RaPkEkNcR0a8YQ5Wb4Y1d2sbaOqfmoD1A9MEAr/8xXzW92vuLKg==",
+  "dgSpecHash": "Qfu+Dd6vgCfJAnT7PAshF/NBfLD9DWuaJIZinVCI1/cVZs8piHm3ISIdbDOZkkc7NqQu56fluXk1J8kZPoQhhQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\DataAccessLayer\\DataAccessLayer.csproj",
+  "projectFilePath": "C:\\Users\\kmlsv\\source\\repos\\EconomyProject\\DataAccessLayer\\EconomyProject.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kmlsv\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\kmlsv\\.nuget\\packages\\microsoft.codecoverage\\17.2.0\\microsoft.codecoverage.17.2.0.nupkg.sha512",
